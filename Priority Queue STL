@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+  priority_queue<int >pq; // by default max heap/priority queue
+ // priority_queue<int,vector <int >, greater<int> >pq; 
+  int n;
+  cin>>n;
+  int data;
+       while(n>0){
+           cin>>data;
+           pq.push(data);  
+        n--;   
+       }
+ 
+      while(!pq.empty()){
+          cout<<pq.top()<<" ";
+          pq.pop();
+      }
+   return 0; 
+}
